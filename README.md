@@ -56,7 +56,7 @@ The $\text{CO}_2$ calculation is based on the following hardcoded emission facto
 | **Natural Gas** | $\text{m}^3$/day | $2.00$ | $\text{Gas Emissions} = \text{Consumption} \times 2.00$ |
 | **Total** | | | $\sum(\text{Fuel Emissions})$ |
 
-*All $\text{CO}_2$ emissions are in $\text{kg} \, \text{CO}_2$.*
+All $\text{CO}_2$ emissions are in $\text{kg} \, \text{CO}_2$.
 
 ## 💡 How to Use
 
