@@ -149,3 +149,20 @@ button {
     text-align: center; 
     margin-top: 20px; 
 }
+
+.charts-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chart-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .main-content { grid-template-columns: 1fr; }
+    .charts-row { flex-direction: column; }
+}
