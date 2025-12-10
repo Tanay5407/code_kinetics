@@ -1,3 +1,10 @@
+const benchmarks = {
+    fertilizer: 1800,
+    polymer: 1400,
+    refinery: 2200,
+    generic: 1600
+};
+
 function getAISuggestions(total) {
     if (total < 500) return "✅ Excellent: Minimal environmental impact. Keep it up!";
     if (total < 2000) return "⚠ Moderate: Review fuel efficiency in boilers.";
@@ -44,7 +51,11 @@ function calculateCO2() {
             <div class="result-item"><strong>Green Score:</strong> <span>${score}</span></div>
             <div class="suggestion-box"><strong>♻ AI Recommendation:</strong><br>${suggestion}</div>
         `;
+
+        updateCharts(coalCO2, dieselCO2, gasCO2, totalEmission);
     }
+}
+function updateCharts(coalCO2, dieselCO2, gasCO2, totalEmission) {
 }
 function downloadPDF() {
 }
