@@ -1,3 +1,13 @@
+function getAISuggestions(total) {
+    if (total < 500) return "✅ Excellent: Minimal environmental impact. Keep it up!";
+    if (total < 2000) return "⚠ Moderate: Review fuel efficiency in boilers.";
+    return "🚨 Critical: High Carbon Footprint! Consider renewable energy switch.";
+}
+function getGreenScore(total) {
+    if (total < 500) return "Eco-Gold 🌿";
+    if (total < 1500) return "Eco-Silver 🍃";
+    return "Eco-Bronze 🍂";
+}
 function calculateCO2() {
     let plant = document.getElementById('plantType').value;
     let coal = Number(document.getElementById('coal').value) || 0;
@@ -32,7 +42,5 @@ function calculateCO2() {
         `;
     }
 }
-
-
 function downloadPDF() {
 }
