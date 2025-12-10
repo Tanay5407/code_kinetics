@@ -79,11 +79,3 @@ The application uses a green-themed color palette defined via CSS variables in `
 ## 🤝 Contribution
 
 Contributions are welcome! If you have suggestions for new industry benchmarks, better emission factors, or feature improvements, please open an issue or submit a pull request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the `LICENSE` file (if you choose to add one) for details.
-
----
-
-*Made with $\heartsuit$ for a greener planet.*
