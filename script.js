@@ -30,6 +30,8 @@ function calculateCO2() {
 
         let benchmarkValue = benchmarks[plant];
         let difference = totalEmission - benchmarkValue;
+        let suggestion = getAISuggestions(totalEmission);
+        let score = getGreenScore(totalEmission);
         
         let diffClass = difference > 0 ? "negative" : "positive";
         let diffText = difference > 0 ? `${difference.toFixed(2)} (Excess)` : `${Math.abs(difference).toFixed(2)} (Saved)`;
@@ -39,6 +41,8 @@ function calculateCO2() {
             <div class="result-item"><strong>Total Emissions:</strong> <span>${totalEmission.toFixed(2)} kg CO₂</span></div>
             <div class="result-item"><strong>Industry Benchmark:</strong> <span>${benchmarkValue} kg CO₂</span></div>
             <div class="result-item ${diffClass}"><strong>Performance:</strong> <span>${diffText}</span></div>
+            <div class="result-item"><strong>Green Score:</strong> <span>${score}</span></div>
+            <div class="suggestion-box"><strong>♻ AI Recommendation:</strong><br>${suggestion}</div>
         `;
     }
 }
